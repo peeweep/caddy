@@ -32,13 +32,16 @@ import (
 	caddycmd "github.com/caddyserver/caddy/v2/cmd"
 
 	// plug in Caddy modules here
+	_ "github.com/caddy-dns/alidns"
 	_ "github.com/caddy-dns/azure"
 	_ "github.com/caddy-dns/cloudflare"
 	_ "github.com/caddy-dns/cloudns"
 	_ "github.com/caddy-dns/digitalocean"
 	_ "github.com/caddy-dns/duckdns"
 	_ "github.com/caddy-dns/googleclouddns"
+	_ "github.com/caddy-dns/he"
 	_ "github.com/caddy-dns/hetzner"
+	_ "github.com/caddy-dns/huaweicloud"
 	_ "github.com/caddy-dns/mailinabox"
 	_ "github.com/caddy-dns/netcup"
 	_ "github.com/caddy-dns/ovh"
