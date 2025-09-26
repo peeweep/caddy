@@ -32,7 +32,24 @@ import (
 	caddycmd "github.com/caddyserver/caddy/v2/cmd"
 
 	// plug in Caddy modules here
+	_ "github.com/caddy-dns/azure"
+	_ "github.com/caddy-dns/cloudflare"
+	_ "github.com/caddy-dns/cloudns"
+	_ "github.com/caddy-dns/digitalocean"
+	_ "github.com/caddy-dns/duckdns"
+	_ "github.com/caddy-dns/googleclouddns"
+	_ "github.com/caddy-dns/hetzner"
+	_ "github.com/caddy-dns/mailinabox"
+	_ "github.com/caddy-dns/netcup"
+	_ "github.com/caddy-dns/ovh"
+	_ "github.com/caddy-dns/porkbun"
+	_ "github.com/caddy-dns/rfc2136"
+	_ "github.com/caddy-dns/vultr"
 	_ "github.com/caddyserver/caddy/v2/modules/standard"
+	_ "github.com/greenpau/caddy-security"
+	_ "github.com/mholt/caddy-dynamicdns"
+	_ "github.com/mholt/caddy-events-exec"
+	_ "github.com/mholt/caddy-webdav"
 )
 
 func main() {
